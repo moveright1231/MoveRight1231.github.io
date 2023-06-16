@@ -2,7 +2,7 @@
     "items": [{
         "name": "Project One",
         "link": "",
-        "image": "https://i.imgur.com/dG8Vhy1.png",
+        "image": "http://via.placeholder.com/480x320",
         "date_added": "2023-06-13",
         "description": "This is a description<br><small><em>attribute - attribute link</em></small>",
         "technologies": [
