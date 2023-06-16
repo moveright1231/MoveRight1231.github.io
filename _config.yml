@@ -1,0 +1,13 @@
+# Site settings
+name: DongWooLee
+email: dlehddn1231@naver.com
+url: url
+description: "Portfolio of DongWoo"
+author: "DongWooLee"
+title: "BlogFolio"
+permalink: pretty
+baseurl: /jekyll-theme-blogfolio
+
+# social
+github:
+  username: MoveRight1231

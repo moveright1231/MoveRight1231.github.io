@@ -1,0 +1,12 @@
+{
+    "items": [{
+        "name": "Project One",
+        "link": "",
+        "image": "https://i.imgur.com/dG8Vhy1.png",
+        "date_added": "2023-06-13",
+        "description": "This is a description<br><small><em>attribute - attribute link</em></small>",
+        "technologies": [
+            "Python", "C language", "Django"
+        ]
+    }]
+}
