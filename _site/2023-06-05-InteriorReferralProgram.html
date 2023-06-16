@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Cache-Control" content="no-transform"/>
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <title>DongWooLee</title>
+    <title>InteriorReferralProgram</title>
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="/style/image/favicon.png">
     <link rel="apple-touch-icon" href="/style/image/favicon.png"/>
@@ -41,27 +41,99 @@
 
     <article class="main-content page-page" itemscope itemtype="http://schema.org/Article">
     <div class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            InteriorReferralProgram
+        </h1>
+        <div class="post-data">
+            <time itemprop="datePublished">Jun 05, 2023</time>
+        </div>
     </div>
-        <article class="post-content">
-            <h2>Oh no, 404</h2>
-            <p>Page not found! :(</p>
-            <p>After <span id="404Time" style="color:#D3070A;">6</span> seconds, jump to home page</p>
-        </article>
 </article>
+<div class="main-container">
+    <div class="post-container">
+        <div class="navigation" id="navigation">
+            <h1>Contents</h1>
+            <ul class="nav sidenav"></ul>
+        </div>
+        <article class="post-content">
+            <h1 id="interior-referral-program">Interior Referral Program</h1>
 
-<script type="text/javascript"> 
-	function delayURL(url) {
-		var delay = document.getElementById("404Time").innerHTML;
-		if(delay > 0) {
-			delay--;
-			document.getElementById("404Time").innerHTML = delay;
-		} else {
-			window.top.location.href = url;
-		}
-		setTimeout("delayURL('" + url + "')", 1000);
-	}
-	delayURL("/");
+<p>인테리어 추천 서비스</p>
+
+<p>프로젝트 개요:
+이 프로젝트는 인테리어 추천 프로그램을 개발하는 것을 목표로 하였습니다. 사용자는 원하는 가구 종류, 색상, 가격대, 디자인을 선택하고 검색 버튼을 클릭하여 인테리어에 적합한 가구를 추천받을 수 있습니다. 또한, 프로그램은 웹 크롤링을 통해 사용자가 선택한 가구 브랜드의 웹 페이지로 이동할 수 있는 기능도 제공합니다.</p>
+
+<ol>
+  <li>GUI 개발:
+    <ul>
+      <li>Tkinter 모듈을 사용하여 GUI 창을 생성하였습니다.</li>
+      <li>이미지를 표시하기 위해 PIL(Python Imaging Library) 모듈을 사용하였습니다.</li>
+      <li>각종 버튼과 라벨을 생성하여 사용자와의 상호작용을 가능하게 하였습니다.</li>
+      <li>Combobox를 사용하여 사용자가 가구 종류, 색상, 가격대, 디자인을 선택할 수 있도록 하였습니다.</li>
+    </ul>
+  </li>
+  <li>웹 크롤링:
+    <ul>
+      <li>사용자가 선택한 가구 브랜드의 웹 페이지로 이동하기 위해 webbrowser 모듈을 사용.</li>
+      <li>사용자가 선택한 가구 브랜드의 URL을 웹 브라우저에서 열어주는 기능을 구현.</li>
+    </ul>
+  </li>
+  <li>OpenAI API 사용:
+    <ul>
+      <li>OpenAI의 GPT-3.5 모델을 사용하여 사용자의 입력에 대한 답변을 생성.</li>
+      <li>사용자가 선택한 가구 종류, 색상, 가격대, 디자인 등을 바탕으로 인테리어에 적합한 가구를 추천하는 내용을 GPT-3.5 모델에 입력.</li>
+      <li>OpenAI API를 사용하기 위해 필요한 인증키를 등록하고 API 호출을 수행.</li>
+    </ul>
+  </li>
+  <li>기타 기능:
+    <ul>
+      <li>가구 브랜드 모아보기! 버튼을 구현하여, 유명 브랜드의 이름이 나열되어 있고 버튼을 누르면 해당
+ 브랜드의 사이트로 이동.</li>
+      <li>올해 유행하는 스타일! 버튼을 구현하여, 웹 사이트에서 자주 사용하는 브랜드와 스타일 검색을 찾아
+ 추천하는 기능을 구현 예정.</li>
+      <li>질문과 답변을 표시하는 텍스트 창을 구현하여, 사용자의 입력과 프로그램의 답변을 시각적으로 표시.</li>
+    </ul>
+  </li>
+</ol>
+
+<p><img src="https://i.imgur.com/cy5sddY.png" alt="Image Description" /></p>
+
+<p>→ 1차 데모</p>
+
+<p>텍스트를 입력받아 GPT에 질문을 하는 형식</p>
+
+<p><img src="https://i.imgur.com/miMjbiH.png" alt="Image Description" /></p>
+
+<p>→ 2차 데모</p>
+
+<p>카테고리 형태로 User의 원하는 사항을 체크, 가구 브랜드 모아보기와 올해 유행하는 스타일 버튼을 통하여
+추가적인 기능 추가.</p>
+
+<p>프로젝트 결과:
+이 프로젝트를 통해 사용자는 간편하게 인테리어에 적합한 가구를 추천받을 수 있습니다. 사용자가 원하는 가구 종류, 색상, 가격대, 디자인을 선택하고 검색 버튼을 클릭하면 OpenAI 모델을 통해 가구 추천에 대한 답변을 생성하고 텍스트로 제공.</p>
+
+        </article>
+        <div class="post-content">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+
+<script data-no-instant type="text/javascript">
+const gitalk = new Gitalk({
+  clientID: '',
+  clientSecret: '',
+  repo: 'moveright1231.github.io',
+  owner: 'moveright1231',
+  admin: ['moveright1231'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: true  // Facebook-like distraction free mode
+})
+
+gitalk.render('gitalk-container')
 </script>
+        </div>
+    </div>
+</div>
     
     <footer id="footer" class="footer bg-white">
     <div class="footer-social">

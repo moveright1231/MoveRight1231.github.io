@@ -1,13 +1,22 @@
-# Site settings
 name: DongWooLee
-email: dlehddn1231@naver.com
-url: url
-description: "Portfolio of DongWoo"
-author: "DongWooLee"
-title: "BlogFolio"
-permalink: pretty
-baseurl: /jekyll-theme-blogfolio
-
-# social
-github:
-  username: MoveRight1231
+author: DongWooLee
+url: https://moveright1231.github.io
+baseurl: 
+resume_site: https://moveright1231.github.io
+description: DongWoo's Blog
+github_username: moveright1231
+github: https://github.com/moveright1231
+plugins: [jekyll-paginate]
+permalink: /:year-:month-:day-:title
+paginate: 12
+paginate_path: "/page/:num/"
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+highlighter: rouge
+markdown: kramdown
+comments :
+  gitalk :
+    clientID : 
+    clientSecret : 
+    repo : moveright1231.github.io
+    owner : moveright1231
+    admin : moveright1231

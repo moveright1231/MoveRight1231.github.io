@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-{% include head.html %}
 
-<body>
-    {% include nav.html %}
-    {{content}}
+  {% include head.html %}
+
+<body class="bg-grey" gtools_scp_screen_capture_injected="true">
+
+    {% include header.html %}
+
+    {{ content }}
+    
     {% include footer.html %}
-    {% include scripts.html %}
-</body>
 
+  </body>
 </html>

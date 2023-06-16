@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>DongWoo's Blog</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 16 Jun 2023 19:45:12 +0900</pubDate>
+    <lastBuildDate>Fri, 16 Jun 2023 19:45:12 +0900</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>InteriorReferralProgram</title>
+        <description>&lt;h1 id=&quot;interior-referral-program&quot;&gt;Interior Referral Program&lt;/h1&gt;
+
+&lt;p&gt;인테리어 추천 서비스&lt;/p&gt;
+
+&lt;p&gt;프로젝트 개요:
+이 프로젝트는 인테리어 추천 프로그램을 개발하는 것을 목표로 하였습니다. 사용자는 원하는 가구 종류, 색상, 가격대, 디자인을 선택하고 검색 버튼을 클릭하여 인테리어에 적합한 가구를 추천받을 수 있습니다. 또한, 프로그램은 웹 크롤링을 통해 사용자가 선택한 가구 브랜드의 웹 페이지로 이동할 수 있는 기능도 제공합니다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;GUI 개발:
+    &lt;ul&gt;
+      &lt;li&gt;Tkinter 모듈을 사용하여 GUI 창을 생성하였습니다.&lt;/li&gt;
+      &lt;li&gt;이미지를 표시하기 위해 PIL(Python Imaging Library) 모듈을 사용하였습니다.&lt;/li&gt;
+      &lt;li&gt;각종 버튼과 라벨을 생성하여 사용자와의 상호작용을 가능하게 하였습니다.&lt;/li&gt;
+      &lt;li&gt;Combobox를 사용하여 사용자가 가구 종류, 색상, 가격대, 디자인을 선택할 수 있도록 하였습니다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;웹 크롤링:
+    &lt;ul&gt;
+      &lt;li&gt;사용자가 선택한 가구 브랜드의 웹 페이지로 이동하기 위해 webbrowser 모듈을 사용.&lt;/li&gt;
+      &lt;li&gt;사용자가 선택한 가구 브랜드의 URL을 웹 브라우저에서 열어주는 기능을 구현.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;OpenAI API 사용:
+    &lt;ul&gt;
+      &lt;li&gt;OpenAI의 GPT-3.5 모델을 사용하여 사용자의 입력에 대한 답변을 생성.&lt;/li&gt;
+      &lt;li&gt;사용자가 선택한 가구 종류, 색상, 가격대, 디자인 등을 바탕으로 인테리어에 적합한 가구를 추천하는 내용을 GPT-3.5 모델에 입력.&lt;/li&gt;
+      &lt;li&gt;OpenAI API를 사용하기 위해 필요한 인증키를 등록하고 API 호출을 수행.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;기타 기능:
+    &lt;ul&gt;
+      &lt;li&gt;가구 브랜드 모아보기! 버튼을 구현하여, 유명 브랜드의 이름이 나열되어 있고 버튼을 누르면 해당
+ 브랜드의 사이트로 이동.&lt;/li&gt;
+      &lt;li&gt;올해 유행하는 스타일! 버튼을 구현하여, 웹 사이트에서 자주 사용하는 브랜드와 스타일 검색을 찾아
+ 추천하는 기능을 구현 예정.&lt;/li&gt;
+      &lt;li&gt;질문과 답변을 표시하는 텍스트 창을 구현하여, 사용자의 입력과 프로그램의 답변을 시각적으로 표시.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/cy5sddY.png&quot; alt=&quot;Image Description&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;→ 1차 데모&lt;/p&gt;
+
+&lt;p&gt;텍스트를 입력받아 GPT에 질문을 하는 형식&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/miMjbiH.png&quot; alt=&quot;Image Description&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;→ 2차 데모&lt;/p&gt;
+
+&lt;p&gt;카테고리 형태로 User의 원하는 사항을 체크, 가구 브랜드 모아보기와 올해 유행하는 스타일 버튼을 통하여
+추가적인 기능 추가.&lt;/p&gt;
+
+&lt;p&gt;프로젝트 결과:
+이 프로젝트를 통해 사용자는 간편하게 인테리어에 적합한 가구를 추천받을 수 있습니다. 사용자가 원하는 가구 종류, 색상, 가격대, 디자인을 선택하고 검색 버튼을 클릭하면 OpenAI 모델을 통해 가구 추천에 대한 답변을 생성하고 텍스트로 제공.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 05 Jun 2023 01:04:00 +0900</pubDate>
+        <link>http://localhost:4000/2023-06-05-InteriorReferralProgram</link>
+        <guid isPermaLink="true">http://localhost:4000/2023-06-05-InteriorReferralProgram</guid>
+        
+        
+        <category>code</category>
+        
+      </item>
+    
+      <item>
+        <title>A Example Post</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#sub-title&quot; id=&quot;markdown-toc-sub-title&quot;&gt;sub title&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#about-thumbnail&quot; id=&quot;markdown-toc-about-thumbnail&quot;&gt;about thumbnail&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#about-icon&quot; id=&quot;markdown-toc-about-icon&quot;&gt;about icon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sub-title&quot;&gt;sub title&lt;/h2&gt;
+
+&lt;p&gt;page…&lt;/p&gt;
+
+&lt;h2 id=&quot;about-thumbnail&quot;&gt;about thumbnail&lt;/h2&gt;
+
+&lt;p&gt;add the thumbnail url&lt;/p&gt;
+
+&lt;h2 id=&quot;about-icon&quot;&gt;about icon&lt;/h2&gt;
+
+&lt;p&gt;such as book, code, web, chat, note, game, link, design, image&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Jan 2019 01:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2019-01-01-example-post</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-01-01-example-post</guid>
+        
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+  </channel>
+</rss>

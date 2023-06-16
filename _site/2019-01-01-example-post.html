@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="Cache-Control" content="no-transform"/>
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <title>DongWooLee</title>
+    <title>A Example Post</title>
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="/style/image/favicon.png">
     <link rel="apple-touch-icon" href="/style/image/favicon.png"/>
@@ -41,27 +41,61 @@
 
     <article class="main-content page-page" itemscope itemtype="http://schema.org/Article">
     <div class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            A Example Post
+        </h1>
+        <div class="post-data">
+            <time itemprop="datePublished">Jan 01, 2019</time>
+        </div>
     </div>
-        <article class="post-content">
-            <h2>Oh no, 404</h2>
-            <p>Page not found! :(</p>
-            <p>After <span id="404Time" style="color:#D3070A;">6</span> seconds, jump to home page</p>
-        </article>
 </article>
+<div class="main-container">
+    <div class="post-container">
+        <div class="navigation" id="navigation">
+            <h1>Contents</h1>
+            <ul class="nav sidenav"></ul>
+        </div>
+        <article class="post-content">
+            <ul id="markdown-toc">
+  <li><a href="#sub-title" id="markdown-toc-sub-title">sub title</a></li>
+  <li><a href="#about-thumbnail" id="markdown-toc-about-thumbnail">about thumbnail</a></li>
+  <li><a href="#about-icon" id="markdown-toc-about-icon">about icon</a></li>
+</ul>
 
-<script type="text/javascript"> 
-	function delayURL(url) {
-		var delay = document.getElementById("404Time").innerHTML;
-		if(delay > 0) {
-			delay--;
-			document.getElementById("404Time").innerHTML = delay;
-		} else {
-			window.top.location.href = url;
-		}
-		setTimeout("delayURL('" + url + "')", 1000);
-	}
-	delayURL("/");
+<h2 id="sub-title">sub title</h2>
+
+<p>page…</p>
+
+<h2 id="about-thumbnail">about thumbnail</h2>
+
+<p>add the thumbnail url</p>
+
+<h2 id="about-icon">about icon</h2>
+
+<p>such as book, code, web, chat, note, game, link, design, image</p>
+
+        </article>
+        <div class="post-content">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+
+<script data-no-instant type="text/javascript">
+const gitalk = new Gitalk({
+  clientID: '',
+  clientSecret: '',
+  repo: 'moveright1231.github.io',
+  owner: 'moveright1231',
+  admin: ['moveright1231'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: true  // Facebook-like distraction free mode
+})
+
+gitalk.render('gitalk-container')
 </script>
+        </div>
+    </div>
+</div>
     
     <footer id="footer" class="footer bg-white">
     <div class="footer-social">
