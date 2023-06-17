@@ -8,14 +8,14 @@ title: About site
 
 ## Introduction
 
-#
+***
 **Profile Name : Dongwoo Lee**
 
 *이메일 : dlehddn1231@naver.com*
 
 *GitHub : https://github.com/MoveRight1231*
 
-#
+***
 
 **My Skills**
 
@@ -23,10 +23,10 @@ title: About site
 
  *• Language : Python, C*
 
-#
+***
 **Main OS** : *Mac OS, Ubuntu*
 
-#
+***
 **My Projects**
 
  *• 인테리어 추천 프로그램*
