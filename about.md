@@ -8,24 +8,28 @@ title: About site
 
 ## Introduction
 
-****About****
-Profile 이름 : 이동우
+#
+**Profile Name : Dongwoo Lee**
 
-이메일 : dlehddn1231@naver.com
+*이메일 : dlehddn1231@naver.com*
 
-GitHub : https://github.com/MoveRight1231
+*GitHub : https://github.com/MoveRight1231*
 
-My Skills
+#
 
-• Development tools : VSCODE, Django
+**My Skills**
 
-• Language : Python, C
+ *• Development tools : VSCODE, Django*
 
-Main OS : Mac OS, Ubuntu
+ *• Language : Python, C*
 
-My Projects
+#
+**Main OS** : *Mac OS, Ubuntu*
 
-인테리어 추천 프로그램
+#
+**My Projects**
 
-키보드 마우스 오토 매크로
+ *• 인테리어 추천 프로그램*
+
+ *• 키보드 마우스 오토 매크로*
 
