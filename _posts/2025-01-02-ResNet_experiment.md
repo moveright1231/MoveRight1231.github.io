@@ -2,8 +2,8 @@
 layout: post
 title: Residual Connection Ablation Study on ResNet
 date: 2024-12-11 01:00:00 +0800
-category: 비교실험
-thumbnail: /style/image/post_interrior.png
+category: experiment
+thumbnail: /style/image/thumbnail.png
 icon: code
 ---
 
