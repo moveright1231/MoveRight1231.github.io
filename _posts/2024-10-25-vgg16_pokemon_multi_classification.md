@@ -13,7 +13,7 @@ icon: code
 
 [포켓몬 데이터셋](https://www.kaggle.com/datasets/hongdcs/pokemon-gen1-151-classes-classification)
 
-![image.png](style/image/2024-10-25-vgg16_pokemon_multi_classification/1.png)
+![image.png](style/image/2024-10-25-vgg16_pokemon_multi_classification/a.png)
 
 class 폴더마다 데이터들이 들어가있음, 학습에 사용하기 위해 train, valid, test로 나누는 과정이 필요함
 
@@ -66,7 +66,7 @@ result
 - 폴더 별로 데이터들이 잘 들어갔는지 확인
 - 151개의 클래스
 
-![image.png](style/image/2024-10-25-vgg16_pokemon_multi_classification/2.png)
+![image.png](style/image/2024-10-25-vgg16_pokemon_multi_classification/b.png)
 
 클래스 명(폴더명)과 이미지가 잘 들어갔는지 확인.
 
@@ -309,4 +309,4 @@ predict_one(img_path, vgg_model, DEVICE, data_transforms["test"], class_names, t
 
 ```
 
-![image.png](style/image/2024-10-25-vgg16_pokemon_multi_classification/3.png)
+![image.png](style/image/2024-10-25-vgg16_pokemon_multi_classification/c.png)
