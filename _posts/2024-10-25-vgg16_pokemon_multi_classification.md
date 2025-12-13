@@ -310,3 +310,7 @@ predict_one(img_path, vgg_model, DEVICE, data_transforms["test"], class_names, t
 ```
 
 ![image.png](style/image/2024-10-25-vgg16_pokemon_multi_classification/c.png)
+
+## 🔗 참고 자료
+
+- 프로젝트 코드: [Clip-based-restaurant-recommendation](https://github.com/moveright1231/Clip-based-restaurant-recommendation)
