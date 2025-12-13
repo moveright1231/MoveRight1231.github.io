@@ -313,4 +313,4 @@ predict_one(img_path, vgg_model, DEVICE, data_transforms["test"], class_names, t
 
 ## 🔗 참고 자료
 
-- 프로젝트 코드: [Clip-based-restaurant-recommendation](https://github.com/moveright1231/Clip-based-restaurant-recommendation)
+- 프로젝트 코드: [Clip-based-restaurant-recommendation](https://github.com/moveright1231/vgg16_multi_classification)
