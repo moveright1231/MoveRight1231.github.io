@@ -11,6 +11,8 @@ icon: code
 
 ## 데이터셋 분리 및 전처리
 
+포켓몬 데이터셋 [text](https://www.kaggle.com/datasets/hongdcs/pokemon-gen1-151-classes-classification)
+
 ![image.png](style/image/2024-10-25-vgg16_pokemon_multi_classification/1.png)
 
 class 폴더마다 데이터들이 들어가있음, 학습에 사용하기 위해 train, valid, test로 나누는 과정이 필요함
