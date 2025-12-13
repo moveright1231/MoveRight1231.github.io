@@ -11,7 +11,7 @@ icon: code
 
 ## 데이터셋 분리 및 전처리
 
-포켓몬 데이터셋 [text](https://www.kaggle.com/datasets/hongdcs/pokemon-gen1-151-classes-classification)
+[포켓몬 데이터셋](https://www.kaggle.com/datasets/hongdcs/pokemon-gen1-151-classes-classification)
 
 ![image.png](style/image/2024-10-25-vgg16_pokemon_multi_classification/1.png)
 
