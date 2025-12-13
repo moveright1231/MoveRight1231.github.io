@@ -313,4 +313,4 @@ predict_one(img_path, vgg_model, DEVICE, data_transforms["test"], class_names, t
 
 ## 🔗 참고 자료
 
-- 프로젝트 코드: (https://github.com/moveright1231/vgg16_multi_classification)
+- 프로젝트 코드: [vgg16_multi_classification](https://github.com/moveright1231/vgg16_multi_classification)
