@@ -3,7 +3,7 @@ layout: post
 title: Multi classification (vgg16, pokemon 데이터셋)
 date: 2024-10-25 11:00:00 +0800
 category: experiment
-thumbnail: /style/image/thumbnail.png
+thumbnail: style/image/2024-10-25-vgg16_pokemon_multi_classification/c.png
 icon: code
 ---
 
