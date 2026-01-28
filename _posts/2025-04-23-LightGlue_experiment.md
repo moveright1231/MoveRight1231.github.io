@@ -1,9 +1,9 @@
 ---
 layout: post
-title: LightGlue Feature Matching Comparison (SuperPoint / DISK / SIFT / ALIKED / DoGHardNet)
+title: LightGlue Feature Matching Comparison
 date: 2025-04-23 11:30:00 +0800
 category: experiment
-thumbnail: style/image/lightglue_image_matching/image 1.png
+thumbnail: style/image/lightglue_image_matching/image1.png
 icon: code
 ---
 
@@ -88,7 +88,7 @@ icon: code
 
 ### SuperPoint
 
-![image.png](style/image/lightglue_image_matching/image%201.png)
+![image.png](style/image/lightglue_image_matching/image1.png)
 
 - 장비 전역에 비교적 고르게 매칭 분포.
 - 상단 패널(검정 장치), 라벨, 케이블 구역 모두 골고루 잡힘.
