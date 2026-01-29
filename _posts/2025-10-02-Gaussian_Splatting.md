@@ -195,13 +195,13 @@ Gaussian Splatting은 각 속성별로 다른 학습률을 사용:
 
 ### ▪ 결과 PLY (cloudcompare)
 
-![ply_cc.gif](PROJECT_REPORT/ply_cc.gif)
+![ply_cc.gif](style/image/PROJECT_REPORT/ply_cc.gif)
 
 ### ▪ Iteration별 렌더링 품질 변화
 
 ### 📹 2**,000 Iterations**
 
-![1000 iterations](PROJECT_REPORT/nerf_gs.gif)
+![1000 iterations](style/image/PROJECT_REPORT/nerf_gs.gif)
 
 1000 iterations
 
@@ -230,7 +230,7 @@ Gaussian Splatting은 각 속성별로 다른 학습률을 사용:
 
 ### 📹 **18,000 Iterations**
 
-![15000 iterations](PROJECT_REPORT/nerf_gs3.gif)
+![15000 iterations](style/image/PROJECT_REPORT/nerf_gs3.gif)
 
 15000 iterations
 
@@ -244,7 +244,7 @@ Gaussian Splatting은 각 속성별로 다른 학습률을 사용:
 
 ### 📹 **30,000 Iterations (최종)**
 
-![30000 iterations](PROJECT_REPORT/4.gif)
+![30000 iterations](style/image/PROJECT_REPORT/4.gif)
 
 30000 iterations
 
@@ -573,9 +573,6 @@ property float rot_0~3          # 회전 (quaternion)
 
 ### ▪ 향후 계획
 
-마스크 기반 학습을 완료하여 배경 없는 깨끗한 3D 모델을 생성하고, 이를 웹 뷰어에 임베드하여 인터랙티브한 3D 갤러리를 구축할 예정입니다.
+마스크 기반 학습을 완료하여 배경 없는 깨끗한 3D 모델을 생성하고, 이를 웹 뷰어에 임베드하여 인터랙티브한 3D 갤러리를 구축할 예정.
 
 ---
-
-**보고서 작성일**: 2026.01.29
-**프로젝트 저장소**: `e:\ai_projects\gs-project`**문의**: [Your Contact]
