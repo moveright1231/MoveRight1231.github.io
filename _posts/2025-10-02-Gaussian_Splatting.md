@@ -75,6 +75,9 @@ icon: code
 | **전처리** | 자동 리사이징, undistortion |
 | **평가 방식** | 시각적 품질 평가, 실시간 뷰어 검증 |
 
+![ply_cc.gif](style/image/PROJECT_REPORT/dataset.png)
+
+
 ### ▪ 데이터 특성
 
 - **장점**:
