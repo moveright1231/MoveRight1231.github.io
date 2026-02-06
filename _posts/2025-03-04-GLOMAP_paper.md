@@ -37,9 +37,9 @@ icon: code
 
 ## 🏗 2. COLMAP: Structure-from-Motion Revisited (CVPR 2016)
 
-**COLMAP**은 *Structure-from-Motion Revisited* 논문으로 정립된 범용 SfM 구현이다. SfM 알고리즘 그 자체뿐 아니라, 실제 엔드-투-엔드 3D 재구성 파이프라인으로 설계되었다.  [oai_citation:1‡벡터로그](https://velog.io/%40shj4901/Structure-from-Motion-Revisited?utm_source=chatgpt.com)
+**COLMAP**은 *Structure-from-Motion Revisited* 논문으로 정립된 범용 SfM 구현이다. SfM 알고리즘 그 자체뿐 아니라, 실제 엔드-투-엔드 3D 재구성 파이프라인으로 설계되었다.
 
-![image.png](blog_colmap&glomap/1.png)
+![image.png](style/image/blog_colmap&glomap/1.png)
 
 **그림 1. GLOMAP 재구성 예시**
 
@@ -62,7 +62,7 @@ icon: code
     
 - **Scene Graph Augmentation**
     
-    view graph에서 homography / essential / fundamental inliers 기반으로 안정적인 연결을 선정함.  [oai_citation:2‡xoft](https://xoft.tistory.com/118?utm_source=chatgpt.com)
+    view graph에서 homography / essential / fundamental inliers 기반으로 안정적인 연결을 선정함.
     
 - **Next Best View Selection**
     
@@ -70,11 +70,11 @@ icon: code
     
 - **Robust Triangulation**
     
-    RANSAC-based sampling으로 robust한 3D 포인트 추정과 **positive depth** 검증을 포함함.  [oai_citation:3‡xoft](https://xoft.tistory.com/118?utm_source=chatgpt.com)
+    RANSAC-based sampling으로 robust한 3D 포인트 추정과 **positive depth** 검증을 포함함. 
     
 - **Bundle Adjustment**
     
-    local 및 global BA를 반복적으로 수행하여 전체 구조를 최적화함.  [oai_citation:4‡xoft](https://xoft.tistory.com/118?utm_source=chatgpt.com)
+    local 및 global BA를 반복적으로 수행하여 전체 구조를 최적화함.  
     
 
 ### ▶ 특징적 구현 세부
@@ -83,7 +83,7 @@ icon: code
 - Scene graph를 이용한 correspondence filtering
 - Sparse direct solver + iterative solver 결합 최적화
 
-COLMAP은 incremental SfM의 **정확도와 robustness**를 유지하면서 다양한 이미지 세트에 적용 가능하도록 설계되었다.  [oai_citation:5‡벡터로그](https://velog.io/%40shj4901/Structure-from-Motion-Revisited?utm_source=chatgpt.com)
+COLMAP은 incremental SfM의 **정확도와 robustness**를 유지하면서 다양한 이미지 세트에 적용 가능하도록 설계되었다.  
 
 ---
 
@@ -98,11 +98,11 @@ COLMAP은 incremental SfM의 **정확도와 robustness**를 유지하면서 다�
 
 ### 🧠 GLOMAP 논문 개요
 
-*Global Structure-from-Motion Revisited*는 global SfM 접근 자체를 **다시 정의한 실용적인 SfM 파이프라인**으로, incremental 방식 수준의 정확도와 robustness를 유지하면서 **현저하게 빠른 성능**을 제공한다.  [oai_citation:7‡arXiv](https://arxiv.org/abs/2407.20219?utm_source=chatgpt.com)
+*Global Structure-from-Motion Revisited*는 global SfM 접근 자체를 **다시 정의한 실용적인 SfM 파이프라인**으로, incremental 방식 수준의 정확도와 robustness를 유지하면서 **현저하게 빠른 성능**을 제공한다.  
 
 **핵심 차이점**은 global SfM에서 흔히 사용하는 *translation averaging*을 **배제하고**, 카메라 위치와 3D 포인트 위치를 **joint로 최적화**하는 새로운 글로벌 포지셔닝 전략에 있다.
 
-![image.png](blog_colmap&glomap/image2.png)
+![image.png](style/image/blog_colmap&glomap/2.png)
 
 **그림 2. GLOMAP 파이프라인 개요**
 
@@ -153,7 +153,7 @@ COLMAP은 incremental SfM의 **정확도와 robustness**를 유지하면서 다�
 
 - 카메라 위치와 3D 포인트를 **joint optimization**함으로써 translation averaging의 불안정성을 제거했다.
 
-![image.png](blog_colmap&glomap/image3.png)
+![image.png](style/image/blog_colmap&glomap/3.png)
 
 **왼쪽 이미지 (초기 상태)**
 
@@ -183,16 +183,16 @@ COLMAP의 correspondence 검색 모듈을 기반으로 RootSIFT와 bag-of-words�
 
 ### 3) Global Refinement
 
-joint estimation 후 global bundle adjustment를 수행하여 구조와 포즈를 동시에 정제한다.  [oai_citation:12‡Linfei's world](https://lpanaf.github.io/eccv24_glomap/?utm_source=chatgpt.com)
+joint estimation 후 global bundle adjustment를 수행하여 구조와 포즈를 동시에 정제한다.  
 
 ### 🧪 성능 및 결과
 
 - GLOMAP은 **global SfM baseline보다 우수**한 성능을 보이며,
-- **COLMAP과 비슷하거나 더 우수한 정확성**을 유지하면서 **수배 빠른 처리 속도**를 달성했다. [oai_citation:13‡Linfei's world](https://lpanaf.github.io/eccv24_glomap/?utm_source=chatgpt.com)
+- **COLMAP과 비슷하거나 더 우수한 정확성**을 유지하면서 **수배 빠른 처리 속도**를 달성했다.
 
 ### 🔗 구현 및 오픈소스
 
-GLOMAP은 COLMAP DB를 입력으로 받아 **sparse reconstruction** 결과를 출력하는 global SfM 라이브러리로 공개되어 있다.  [oai_citation:14‡GitHub](https://github.com/colmap/glomap?utm_source=chatgpt.com)
+GLOMAP은 COLMAP DB를 입력으로 받아 **sparse reconstruction** 결과를 출력하는 global SfM 라이브러리로 공개되어 있다.  
 
 ---
 
@@ -211,9 +211,9 @@ GLOMAP은 COLMAP DB를 입력으로 받아 **sparse reconstruction** 결과를 �
 
 ## 🚀 5. 정리
 
-- **SfM은 2D 이미지로부터 3D 구조를 복원하는 핵심 CV 분야 문제**이며, geometric verification, triangulation, pose estimation, bundle adjustment를 중심으로 구성된다. [oai_citation:16‡위키백과](https://en.wikipedia.org/wiki/Structure_from_motion?utm_source=chatgpt.com)
-- **COLMAP 논문**은 incremental SfM의 범용적이고 실용적인 구현으로 SfM 커뮤니티에서 표준으로 자리매김했다. [oai_citation:17‡벡터로그](https://velog.io/%40shj4901/Structure-from-Motion-Revisited?utm_source=chatgpt.com)
-- **GLOMAP은 global SfM을 재정의한 논문**으로, 기존 global SfM의 한계를 극복하고 incremental 수준의 성능을 global pipeline에서도 달성했다. [oai_citation:18‡arXiv](https://arxiv.org/abs/2407.20219?utm_source=chatgpt.com)
+- **SfM은 2D 이미지로부터 3D 구조를 복원하는 핵심 CV 분야 문제**이며, geometric verification, triangulation, pose estimation, bundle adjustment를 중심으로 구성된다. 
+- **COLMAP 논문**은 incremental SfM의 범용적이고 실용적인 구현으로 SfM 커뮤니티에서 표준으로 자리매김했다. 
+- **GLOMAP은 global SfM을 재정의한 논문**으로, 기존 global SfM의 한계를 극복하고 incremental 수준의 성능을 global pipeline에서도 달성했다.
 
 ---
 
