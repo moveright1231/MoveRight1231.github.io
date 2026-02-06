@@ -3,7 +3,7 @@ layout: post
 title: NeRF 논문리뷰
 date: 2025-03-15 11:30:00 +0800
 category: paper
-thumbnail: style/image/nerf_paper
+thumbnail: style/image/nerf_paper/1.png
 icon: code
 ---
 
