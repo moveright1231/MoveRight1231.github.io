@@ -3,7 +3,7 @@ layout: post
 title: Global Structure-from-Motion 논문리뷰
 date: 2025-03-04 11:30:00 +0800
 category: paper
-thumbnail: style/image/blog_colmap&glomap/1.png
+thumbnail: /style/image/blog_colmap&glomap/1.png
 icon: code
 ---
 

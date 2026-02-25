@@ -3,7 +3,7 @@ layout: post
 title: (캡스톤) CBT 시험지 자동 체점
 date: 2024-06-01 18:30:00 +0800
 category: project
-thumbnail: style/image/autograding/4.png
+thumbnail: /style/image/autograding/4.png
 icon: code
 ---
 

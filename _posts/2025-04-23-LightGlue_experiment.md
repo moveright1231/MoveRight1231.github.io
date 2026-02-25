@@ -3,7 +3,7 @@ layout: post
 title: LightGlue Feature Matching Comparison
 date: 2025-04-23 11:30:00 +0800
 category: experiment
-thumbnail: style/image/lightglue_image_matching/image1.png
+thumbnail: /style/image/lightglue_image_matching/image1.png
 icon: code
 ---
 

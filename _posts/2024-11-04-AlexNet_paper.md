@@ -3,7 +3,7 @@ layout: post
 title: AlexNet 논문리뷰
 date: 2024-11-04 06:00:00 +0800
 category: paper
-thumbnail: style/image/AlexNet_paper/4.png
+thumbnail: /style/image/AlexNet_paper/4.png
 icon: code
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: 3D Gaussian Splatting (nerfstudio, colmap)
 date: 2025-10-02 11:30:00 +0800
 category: experiment
-thumbnail: style/image/PROJECT_REPORT/t.png
+thumbnail: /style/image/PROJECT_REPORT/t.png
 icon: code
 ---
 

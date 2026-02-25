@@ -3,7 +3,7 @@ layout: post
 title: 3D Gaussian Splatting 논문리뷰
 date: 2025-04-02 21:30:00 +0800
 category: paper
-thumbnail: style/image/gs_paper/1.png
+thumbnail: /style/image/gs_paper/1.png
 icon: code
 ---
 

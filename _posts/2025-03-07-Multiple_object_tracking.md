@@ -3,7 +3,7 @@ layout: post
 title: Multiple Object Tracking
 date: 2025-03-07 11:30:00 +0800
 category: experiment
-thumbnail: style/image/Multiple_Object_Tracking/4.png
+thumbnail: /style/image/Multiple_Object_Tracking/4.png
 icon: code
 ---
 

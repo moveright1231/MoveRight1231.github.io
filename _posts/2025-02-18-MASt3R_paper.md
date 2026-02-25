@@ -3,7 +3,7 @@ layout: post
 title: MASt3R 논문리뷰
 date: 2025-02-18 18:30:00 +0800
 category: paper
-thumbnail: style/image/dust3r_paper/1.png
+thumbnail: /style/image/dust3r_paper/1.png
 icon: code
 ---
 
