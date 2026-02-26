@@ -13,9 +13,9 @@
     <link href="{{ '/style/css/style.min.css' | prepend: site.baseurl }}" rel="stylesheet">
 	<link rel="stylesheet" href="{{ '/style/css/iconfont/iconfont.css' | prepend: site.baseurl }}">
     <style>
-        .post-content h1, .post-content h2, .post-content h3,
-        .post-content h4, .post-content h5, .post-content h6 {
-            padding-left: 20px;
+        h1::before, .post-content h2::before, .post-content h3::before,
+        .post-content h4::before, .post-content h5::before, .post-content h6::before {
+            content: none;
         }
     </style>
 </head>
