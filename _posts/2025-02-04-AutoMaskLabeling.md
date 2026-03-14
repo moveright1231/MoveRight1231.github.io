@@ -1,6 +1,6 @@
 ---
 layout: post
-title: YOLOv8 기반 용접 불량 자동 검출 시스템
+title: 용접 불량 자동 검출 시스템 + auto mask labeling(SAM2)
 date: 2025-02-04 12:00:00 +0800
 category: experiment
 thumbnail: /style/image/AutoMaskLeabeling/12.png
@@ -9,12 +9,6 @@ icon: code
 
 # welding defect (seg)
 
-## layout: post
-title: SAM2 자동 라벨링으로 YOLOv8 Detection을 Segmentation으로 확장하기
-date: 2026-02-27 00:00:00 +0800
-category: experiment
-thumbnail: /style/image/welding_seg/thumbnail.png
-icon: code
 
 # SAM2 자동 라벨링으로 YOLOv8 Detection을 Segmentation으로 확장하기
 
