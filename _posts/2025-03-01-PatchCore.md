@@ -3,7 +3,7 @@ layout: post
 title: PatchCore 기반 비지도 이상 탐지 시스템 (MVTec AD)
 date: 2025-03-01 15:00:00 +0800
 category: experiment
-thumbnail: /style/image/patchcore/1.png
+thumbnail: /style/image/patchcore/5.png
 icon: code
 ---
 
