@@ -195,7 +195,7 @@ ultralytics는 `opencv-python>=4.6.0` 의존성 경고를 출력하지만, `open
 
 ## 📊 결과 — 전체 파이프라인 데모
 
-![자동 감지 파이프라인 데모](style/image/patchcore/b.gif)
+![자동 감지 파이프라인 데모](style/image/patchcore/b.png)
 
 ![자동 감지 파이프라인 데모](style/image/patchcore/PatchCore.gif)
 
