@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 콜라캔 불량 탐지 — 데이터 수집부터 YOLOv8 학습까지
-date: 2026-04-29 12:00:00 +0800
+date: 2026-02-11 12:00:00 +0800
 category: experiment
 thumbnail: /style/image/jet_anomaly/class_samples.png
 icon: code
