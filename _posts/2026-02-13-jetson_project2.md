@@ -21,7 +21,7 @@ icon: code
 | 추론 FPS | 5~7 FPS (Two-stage, CPU) |
 | 주요 삽질 | onnxruntime 설치, HQ 카메라 드라이버, 도메인 갭, Two-stage 아키텍처 |
 
-> 📸 **[사진 A]** Jetson Nano + C270 웹캠 + 콜라캔 전체 세팅 샷
+
 ![A](style/image/jet_anomaly/title.JPG)
 
 ![B](style/image/jet_anomaly/B.JPG)
@@ -103,6 +103,7 @@ sudo reboot
 
 ![D](style/image/jet_anomaly/D.JPG)
 
+
 ## 🔧 삽질 2 — 도메인 갭
 
 **이것이 이번 편의 핵심 삽질이다.** val 100%인데 실환경에서 틀린다.
@@ -132,7 +133,7 @@ confidence까지 같다. 모델이 입력을 무시하고 crack을 기본값으�
 
 Pi 카메라 특성을 시뮬레이션하는 도메인 증강(블러/노이즈/압축 등)을 적용해 재학습했다. 하지만 C270은 Pi 카메라가 아니라 이 접근법은 오히려 역효과가 났다.
 
-![도메인 증강 비교](style/image/jet_anomaly/domain_aug_comparison.JPG)
+![도메인 증강 비교](style/image/jet_anomaly/domain_aug_comparison.png)
 *Pi 카메라 시뮬레이션 도메인 증강 — C270에는 맞지 않았다*
 
 **▪ 2차 시도: 웹캠 이미지로 재학습**
