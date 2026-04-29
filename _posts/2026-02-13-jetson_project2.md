@@ -101,7 +101,7 @@ sudo reboot
 
 케이블 문제를 해결하는 데 시간이 너무 소요돼서 일단 USB 웹캠(Logitech C270)으로 전환했다. USB 웹캠은 드라이버 설치 없이 `/dev/video0`으로 바로 잡힌다.
 
-![D](style/image/jet_anomaly/D.JPG)
+![D](style/image/jet_anomaly/D.jpg)
 
 
 ## 🔧 삽질 2 — 도메인 갭
