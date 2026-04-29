@@ -3,7 +3,7 @@ layout: post
 title: 콜라캔 불량 탐지 — Jetson Nano 배포 삽질기
 date: 2026-02-13 18:00:00 +0800
 category: experiment
-thumbnail: /style/image/jet_anomaly/title.jpg
+thumbnail: /style/image/jet_anomaly/title.JPG
 icon: code
 ---
 
@@ -22,9 +22,9 @@ icon: code
 | 주요 삽질 | onnxruntime 설치, HQ 카메라 드라이버, 도메인 갭, Two-stage 아키텍처 |
 
 > 📸 **[사진 A]** Jetson Nano + C270 웹캠 + 콜라캔 전체 세팅 샷
-![A](style/image/jet_anomaly/title.jpg)
+![A](style/image/jet_anomaly/title.JPG)
 
-![B](style/image/jet_anomaly/B.jpg)
+![B](style/image/jet_anomaly/B.JPG)
 
 ## 💡 배경
 
@@ -53,7 +53,7 @@ icon: code
 | RAM | 4GB (모델 + 런타임 공유) |
 | 카메라 | Logitech C270 USB 웹캠 |
 
-![C](style/image/jet_anomaly/C.jpg)
+![C](style/image/jet_anomaly/C.JPG)
 
 Python 3.6이라는 게 핵심 제약이다. ultralytics는 Python 3.8 이상이 필요해서 Jetson에서는 쓸 수 없다. 그래서 1편에서 ONNX로 변환해두고, Jetson에서는 onnxruntime으로만 추론하는 방식을 택했다.
 
@@ -70,7 +70,7 @@ pip3 install onnxruntime-1.11.0-cp36-cp36m-linux_aarch64.whl
 
 처음에는 Pi 카메라(IMX219)를 쓰다가 화질이 아쉬워서 Raspberry Pi HQ Camera(IMX477)로 교체를 시도했다.
 
-![E](style/image/jet_anomaly/E.jpg)
+![E](style/image/jet_anomaly/E.JPG)
 
 **▪ 증상: No cameras available**
 
@@ -101,7 +101,7 @@ sudo reboot
 
 케이블 문제를 해결하는 데 시간이 너무 소요돼서 일단 USB 웹캠(Logitech C270)으로 전환했다. USB 웹캠은 드라이버 설치 없이 `/dev/video0`으로 바로 잡힌다.
 
-![D](style/image/jet_anomaly/D.jpg)
+![D](style/image/jet_anomaly/D.JPG)
 
 ## 🔧 삽질 2 — 도메인 갭
 
@@ -132,7 +132,7 @@ confidence까지 같다. 모델이 입력을 무시하고 crack을 기본값으�
 
 Pi 카메라 특성을 시뮬레이션하는 도메인 증강(블러/노이즈/압축 등)을 적용해 재학습했다. 하지만 C270은 Pi 카메라가 아니라 이 접근법은 오히려 역효과가 났다.
 
-![도메인 증강 비교](style/image/jet_anomaly/domain_aug_comparison.jpg)
+![도메인 증강 비교](style/image/jet_anomaly/domain_aug_comparison.JPG)
 *Pi 카메라 시뮬레이션 도메인 증강 — C270에는 맞지 않았다*
 
 **▪ 2차 시도: 웹캠 이미지로 재학습**
@@ -194,7 +194,7 @@ Stage 1: stage1.onnx  [input: (1,3,640,640) → output: (1,2) logits]
         DEFECT + type(crack/line/open) 표시
 ```
 
-![G](style/image/jet_anomaly/G.jpg)
+![G](style/image/jet_anomaly/G.JPG)
 
 **▪ 모델 아키텍처 — YOLOv8n-cls**
 
@@ -239,8 +239,8 @@ model.train(
 
 ```
 수정 전 (누수 있음):
-  data_webcam/good/img_001.jpg → 증강 → train/
-  data_webcam/good/img_001.jpg → val/   ← 동일 원본!
+  data_webcam/good/img_001.JPG → 증강 → train/
+  data_webcam/good/img_001.JPG → val/   ← 동일 원본!
 
 수정 후 (누수 없음):
   data_webcam/good/ 90장 → 셔플 → 84장(train) + 6장(val) 완전 분리
@@ -325,9 +325,9 @@ is_defect = s1_smooth[defect_idx] >= 0.50
 ## ⚡ 최종 추론 성능
 
 
-![H](style/image/jet_anomaly/H.jpg)
+![H](style/image/jet_anomaly/H.JPG)
 
-![I](style/image/jet_anomaly/I.jpg)
+![I](style/image/jet_anomaly/I.JPG)
 
 **▪ 성능 측정 (USB 웹캠, CPU 추론)**
 
@@ -390,7 +390,7 @@ def detect_can_crop(frame, padding=30):
 
 검출된 원의 중심과 반지름으로 bounding square를 만들고 padding을 더해 크롭한다. 감지에 실패해도 전체 프레임으로 폴백하기 때문에 추론이 중단되지 않는다.
 
-![F](style/image/jet_anomaly/F.jpg)
+![F](style/image/jet_anomaly/F.JPG)
 
 ## 🔍 인사이트
 
